@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>智慧农业 - 主页</title>
+    <style type="text/css">
+    .J_iframe{
+        background:url("image/beijing.jpg");
+        background-size:cover;
+    }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="CSS/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="CSS/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="CSS/animate.min.css" rel="stylesheet">
+    <link href="CSS/style.min862f.css?v=4.1.0" rel="stylesheet">
+</head>
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="image/profile_small.jpg" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="socket.php">开始监控</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">水稻数据显示</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="ShuiTiShuJu.php" data-index="0">水体数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="KongQiShuJu.php">空气数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="TuRangShuJu.php">土壤数据显示</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">水稻生长数据</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="kqwdtx.php">空气温度数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="kqsdtx.php">空气湿度数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="gztx.php">光照数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="pmtx.php">PM2.5数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="cotx.php">二氧化碳数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="hzdtx.php">水质浑浊度数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="phtx.php" target="_blank">PH数据显示</a>
+                            </li>
+                            <li>
+                                <a  class="J_menuItem" href="swtx.php" target="_blank">水位数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="trwdtx.php" target="_blank">土壤温度数据显示</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="trsdtx.php" target="_blank">土壤湿度数据显示</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                        <a src="javascript:;" class="active J_menuTab" data-id="ShuiTiShuJu.php">水稻数据查询</a>
+                    </div>
+                </nav>
+            </div>
+             <div class="row J_mainContent" id="content-main">
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="ShuiTiShuJu.php" frameborder="0" data-id="ShuiTiShuJu.php" seamless></iframe>
+            </div>
+            <div class="footer">
+                <div class="pull-right">&copy; 2017-2018 &nbsp;&nbsp;<a href="http://www.zi-han.net/" target="_blank">福建省心动生物科技有限公司    &nbsp;&nbsp;&nbsp;&nbsp; 联系方式：杨超凡(152-0607-8952)</a>
+                </div>
+            </div>
+        </div>
+        <!--右侧部分结束-->
+        <!--右侧边栏开始-->
+        <div id="right-sidebar">
+    </div>
+    <script src="JS/jquery.min.js?v=2.1.4"></script>
+    <script src="JS/bootstrap.min.js?v=3.3.6"></script>
+    <script src="JS/jquery.metisMenu.js"></script>
+    <script src="JS/jquery.slimscroll.min.js"></script>
+    <script src="JS/layer.min.js"></script>
+    <script src="JS/hplus.min.js?v=4.1.0"></script>
+    <script type="text/javascript" src="JS/contabs.min.js"></script>
+    <script src="JS/pace.min.js"></script>
+</body>
+
+</html>
